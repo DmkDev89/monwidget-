@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background: transparent;
+    color: white;
+    text-align: center;
+}
+
+.bar-container {
+    width: 80%;
+    margin: 10px auto;
+    background: #333;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.bar {
+    height: 30px;
+    background: #ffcc00;
+    width: 0%;
+    transition: width 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+}
+
+.bar-container span {
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+}
+
+.winning {
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 10px #ffcc00; }
+    to { box-shadow: 0 0 20px #ffcc00; }
+}
