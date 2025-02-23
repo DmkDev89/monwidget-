@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget Sondage OBS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Sondage en cours...</h2>
+    <div id="poll">
+        <div class="bar-container"><span>🎲 Défis Aléatoires</span><div class="bar" id="bar1">0%</div></div>
+        <div class="bar-container"><span>🎭 Punitions Fun</span><div class="bar" id="bar2">0%</div></div>
+        <div class="bar-container"><span>👑 Duel du Couple</span><div class="bar" id="bar3">0%</div></div>
+        <div class="bar-container"><span>🎁 Chaos du Chat</span><div class="bar" id="bar4">0%</div></div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
